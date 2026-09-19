@@ -1,0 +1,44 @@
+/* Dhivehi font supplied with this package. Keep FARUMA.TTF beside styles.css. */
+@font-face {
+  font-family: "Faruma Local";
+  src: url("FARUMA.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root{--bg:#f3f5f7;--surface:#fff;--ink:#17202a;--muted:#5f6b76;--line:#cfd6dd;--primary:#145da0;--primary-dark:#0f477c;--danger:#a52828;--radius:7px;font-family:Arial,"Noto Sans Thaana","MV Boli",sans-serif;color:var(--ink);background:var(--bg)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);line-height:1.45}.app-header{background:#172b3a;color:#fff;padding:20px max(18px,calc((100vw - 1250px)/2));display:flex;justify-content:space-between;align-items:end;gap:22px}.eyebrow{margin:0 0 4px;text-transform:uppercase;letter-spacing:.08em;font-size:.75rem;color:#bad4e8}.app-header h1{margin:0;font-size:1.75rem}.app-header p:last-child{margin:.25rem 0 0;color:#d8e4ec}.toolbar{display:flex;align-items:end;gap:8px;flex-wrap:wrap}.language-control{display:grid;gap:4px}.language-control label{font-size:.78rem;color:#d8e4ec}button,select,input,textarea{font:inherit}button{border:1px solid var(--primary);border-radius:5px;background:var(--primary);color:#fff;padding:9px 12px;cursor:pointer;font-weight:700}button:hover{background:var(--primary-dark)}button.secondary{background:#fff;color:#17354a;border-color:#b7c7d3}button.danger{color:var(--danger)}main{max-width:1250px;margin:16px auto;padding:0 16px}.status{display:none;border:1px solid #8ec5a4;background:#eaf7ef;color:#185b33;padding:10px 12px;margin-bottom:12px;border-radius:5px}.status.show{display:block}.form-section{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:14px}.form-section h2{font-size:1.15rem;margin:0 0 14px;border-bottom:2px solid var(--primary);padding-bottom:7px}.form-section h3{font-size:1rem;margin:0 0 8px}.section-heading{display:flex;justify-content:space-between;align-items:start;gap:12px}.section-heading h2{flex:1}.section-note{color:var(--muted);margin:-5px 0 12px}.grid{display:grid;gap:12px}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}label{display:grid;gap:5px;font-weight:600;font-size:.9rem;margin-bottom:10px}input,textarea,select{width:100%;padding:8px 9px;border:1px solid #aeb8c2;border-radius:4px;background:#fff;color:#17202a}input:focus,textarea:focus,select:focus{outline:3px solid #b9daf5;border-color:var(--primary)}textarea{resize:vertical}.check-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 20px;margin-bottom:12px}.check-grid label,fieldset label{display:flex;align-items:center;gap:8px;font-weight:500}.check-grid input,fieldset input,.inspection-table input[type=radio]{width:auto;accent-color:var(--primary)}fieldset{border:1px solid var(--line);border-radius:5px;padding:12px;margin:0 0 12px}legend{font-weight:700;padding:0 5px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:850px}th,td{border:1px solid var(--line);padding:7px;vertical-align:top}th{background:#e9eef2;text-align:left;font-size:.82rem}td{font-size:.86rem}td input,td select,td textarea{min-width:85px;margin:0}.inspection-table th:nth-child(2),.inspection-table th:nth-child(3),.inspection-table th:nth-child(4),.inspection-table td:nth-child(2),.inspection-table td:nth-child(3),.inspection-table td:nth-child(4){text-align:center;width:10%}.inspection-table td:first-child{font-weight:700;width:23%}.remove-row{padding:5px 8px;background:#fff;color:var(--danger);border-color:#d3a2a2}.grading-guide{margin-top:12px;border-left:4px solid var(--primary);padding:10px 12px;background:#f3f7fa}.grading-guide dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 18px;margin:0}.grading-guide dl div{display:grid;grid-template-columns:25px 1fr;gap:5px}.grading-guide dt{font-weight:800;color:var(--primary)}.grading-guide dd{margin:0;font-size:.88rem}.radio-line{display:none}.radio-options{display:flex;gap:14px;flex-wrap:wrap}.radio-options label{display:flex;gap:4px;margin:0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}footer{max-width:1250px;margin:0 auto;padding:4px 16px 24px;color:var(--muted);font-size:.82rem}
+html[dir=rtl] body{text-align:right}html[dir=rtl] th{text-align:right}html[dir=rtl] .grading-guide{border-left:1px solid var(--line);border-right:4px solid var(--primary)}
+@media(max-width:850px){.app-header{align-items:start;flex-direction:column}.grid.three,.grid.two{grid-template-columns:1fr}.check-grid{grid-template-columns:1fr}.grading-guide dl{grid-template-columns:1fr}}
+@media print{@page{size:A4;margin:10mm}body{background:#fff;font-size:9pt}.app-header{background:#fff;color:#000;padding:0 0 10px;border-bottom:2px solid #000}.app-header p{color:#000!important}.toolbar,.no-print,.status,footer{display:none!important}main{max-width:none;margin:0;padding:0}.form-section{break-inside:avoid;border:1px solid #777;padding:9px;margin-bottom:8px}.form-section h2{font-size:11pt;margin-bottom:7px}input,textarea,select{border:0;border-bottom:1px solid #777;border-radius:0;padding:2px;background:transparent}.table-wrap{overflow:visible}table{min-width:0}th,td{padding:3px;font-size:7.5pt}.grading-guide{padding:5px}.add-row{display:none}.grid,.check-grid{gap:4px 9px}label{margin-bottom:3px}button{display:none}}
+
+/* Apply Faruma only while the Dhivehi language/RTL mode is active. */
+html[lang="dv"],
+html[lang="dv"] body,
+html[dir="rtl"],
+html[dir="rtl"] body,
+body.lang-dv,
+body.dhivehi {
+  font-family: "Faruma Local", sans-serif;
+}
+
+html[lang="dv"] input,
+html[lang="dv"] textarea,
+html[lang="dv"] select,
+html[lang="dv"] button,
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select,
+html[dir="rtl"] button,
+body.lang-dv input,
+body.lang-dv textarea,
+body.lang-dv select,
+body.lang-dv button,
+body.dhivehi input,
+body.dhivehi textarea,
+body.dhivehi select,
+body.dhivehi button {
+  font-family: "Faruma Local", sans-serif;
+}
